@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocha Putri Nugroho-20102111</title>
+  </head>
+  <body>
+    <form action="action_page.html">
+      <fieldset>
+        <legend>Form Biodata</legend>
+        <input
+          type="image"
+          src="images/ocha.jpeg"
+          alt="Submit"
+          width="180"
+          height="180"
+        />
+
+        <br />
+        <label for="fname">Nama:</label> <br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Tulis Nama Kamu"
+        />
+
+        <br /><br />
+        <label for="nim">Nim:</label> <br />
+        <input type="number" id="nim" name="nim" placeholder="Tulis Nim Kamu" />
+
+        <br /><br />
+        <label for="pass">Password:</label> <br />
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          required
+        />
+
+        <br /><br />
+        <label for="email">Email:</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Tulis Email Kamu"
+        />
+
+        <br /><br />
+        <label for="phone">No. Handphone:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="0852-9067-0608"
+          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+          required
+        />
+        <small>Format: 0852-9067-0608</small>
+
+        <br /><br />
+        <label for="prodi">Prodi:</label> <br />
+        <select id="prodi" name="prodi">
+          <option value="if">Teknik Informatika</option>
+          <option value="si">Sistem Informasi</option>
+          <option value="se">Software Engineering</option>
+          <option value="sd">Sains Data</option>
+        </select>
+
+        <br /><br />
+        <p>Umur:</p>
+        <input type="radio" id="age1" name="age" value="17" />
+        <label for="age1">13 - 17</label><br />
+        <input type="radio" id="age2" name="age" value="23" />
+        <label for="age2">17 - 23</label><br />
+
+        <br /><br />
+        <label for="start">Tanggal Lahir:</label> <br />
+        <input
+          type="date"
+          id="start"
+          name="trip-start"
+          min="1945-01-01"
+          max="2030-12-31"
+        />
+
+        <br /><br />
+        <label for="meeting-time">Tanggal Bertemu:</label> <br />
+        <input type="datetime-local" id="meeting-time" name="meeting-time" />
+
+        <br /><br />
+        <label for="week">Minggu ke-:</label> <br />
+        <input type="week" id="week" name="week" />
+
+        <br /><br />
+        <label for="appt">Waktu:</label> <br />
+        <input type="time" id="appt" name="appt" />
+
+        <br /><br />
+        <label for="pilihan">Sosial Media yang Kamu Miliki:</label> <br />
+        <input type="checkbox" id="wa" name="wa" value="Whatsapp" />
+        <label for="wa"> Whatsapp</label><br />
+        <input type="checkbox" id="ig" name="ig" value="Instagram" />
+        <label for="vehicle2"> Instagram</label><br />
+        <input type="checkbox" id="tt" name="tt" value="Tiktok" />
+        <label for="vehicle3"> Tiktok</label>
+
+        <br /><br />
+        <label for="start">Bulan Kesukaan:</label> <br />
+        <input
+          type="month"
+          id="start"
+          name="start"
+          min="1945-03"
+          max="2030-12"
+        />
+
+        <br /><br />
+        <label for="favcolor">Warna Kesukaan:</label> <br />
+        <input type="color" id="favcolor" name="favcolor" value="#000000" />
+
+        <br /><br />
+        <label for="gsearch">Search the site:</label> <br />
+        <input type="search" id="gsearch" name="gsearch" />
+        <button type="button">Search</button>
+
+        <br /><br />
+        <label for="myfile">Upload Sertifikat Prestasi:</label> <br />
+        <input type="file" id="myfile" name="myfile" multiple />
+
+        <br /><br />
+        <label for="homepage">Link Website Portofolio:</label> <br />
+        <input type="url" id="homepage" name="homepage" />
+
+        <br /><br />
+        <label for="vol">Tingkat Kepuasan Sarana dan Prasarana:</label>
+        <input type="range" id="vol" name="vol" min="0" max="10" />
+
+        <br /><br />
+        <label for="kritik">Kritik dan Saran:</label> <br />
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder="Tulis disini..."
+        ></textarea>
+
+        <br /><br />
+        <button
+          type="button"
+          onclick="alert('Data sudah benar? Jika sudah, klik Submit')"
+        >
+          Cek
+        </button>
+        <input type="reset" value="Reset" />
+        <input type="hidden" name="token" value="20102111" />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
